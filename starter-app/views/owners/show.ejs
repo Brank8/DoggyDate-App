@@ -31,17 +31,8 @@
     <br><% }); %>
   </div>
   <button class="buttonAddDogs"><a href="/owners/<%= owner._id %>/dogs/new" class="no-underline">Add more dogs ฅ՞•ﻌ•՞ฅ</a></button>
-  <% } else { %><br><br><br><br><br><br><br><br><br><br><br><br>
-  <h3>You haven't added any dogs.</h3><button class="buttonAddDogs"><a href="/owners/<%= owner._id %>/dogs/new">Add Dog ฅ՞•ﻌ•՞ฅ</a></button>
-  <% } %><br>
-  <p>Check your info <a href="javascript:void(0)" onclick="document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'">here</a>
-  </p>
-  <div id="light" class="white_content">You are currently logged in as: <%= owner.email %><br><a href="javascript:void(0)" onclick="document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'" class="no-underline">❌</a>
-  </div>
-  <div id="fade" class="black_overlay"></div>
-  <br>
-  <div class="haveAccText">
-    <a href="/">Sign up with different account?</a><span class="button-gap"></span><a href="/login">Log out</a>
-</div>
+  <% } else { %>
+  <h3 class="noDogsPadding">You haven't added any dogs.</h3><button class="buttonAddDogs"><a href="/owners/<%= owner._id %>/dogs/new">Add Dog ฅ՞•ﻌ•՞ฅ</a></button>
+  <% } %>
 
 <%- include('../partials/footer') %>

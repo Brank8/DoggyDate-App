@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, #a22ca1, #ac5ebb, #b986d1, #c8ace3, #dcd0f1, #dcd0f1, #dcd0f1, #dcd0f1, #c8ace3, #b986d1, #ac5ebb, #a22ca1);
+  background-image: linear-gradient(to bottom, #ff8400, #ff583a, #ff1b65, #ff0092, #d700bf, #d700bf, #d700bf, #d700bf, #ff0092, #ff1b65, #ff583a, #ff8400);
   margin: 0;
   height: auto;
   min-height: 100vh;
@@ -303,6 +303,10 @@ a.no-underline {
   text-decoration: none;
 }
 
+.noDogsPadding {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
 
 /* form {
   text-align: center;
@@ -359,10 +363,6 @@ a.no-underline {
   font-size: medium;
 }
 
-.rowButtons {
-  display: flex;
-  gap: 30px;
-}
 .addPage {
   /* overflow: hidden; */
   /* background-size: 200px; */

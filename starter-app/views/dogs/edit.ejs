@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 <div class="updatePage" id="updatePageID">
 <form action="/owners/<%= owner._id %>/dogs/<%= dog._id %>?_method=PUT" method="POST" class="addAndUpdateContainers">
-    <h2>Update Your Dog♡🐾</h2><br><br><br>
+    <h2 class="yourDogName">Update Your Dog♡🐾</h2><br><br><br>
     <div class="updateDogs">
     <label for="name">Edit Name:
         <input type="text" name="name" id="name">
@@ -24,10 +24,8 @@
     <label class="akcVerificationButton" for="hasAkcCertification">AKC Certification:
         <input type="checkbox" name="hasAkcCertification" id="hasAkcCertification">
     </label><br><br>
-    <div class="rowButtons">
-        <a href="/owners/<%= owner._id %>">⇤Go back↩</a>
-    <button type="submit">Update Dog ฅ՞•ﻌ•՞ฅ</button>
-</div>
+    <a href="/owners/<%= owner._id %>">⇤Go back↩</a>
+    <button type="submit" class="buttonAddDogs">Update Dog ฅ՞•ﻌ•՞ฅ</button>
         <section class="haveAccText"><br><br>
             <a href="/">Sign up with different account?</a>
             <a href="/login">Log out</a>

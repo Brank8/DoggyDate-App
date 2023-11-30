@@ -1,7 +1,7 @@
 <%- include('../partials/header') %>
 <div class="updatePage" id="updatePageID">
 <form action="/owners/<%= owner._id %>/dogs" method="POST" enctype="multipart/form-data" class="addAndUpdateContainers">
-    <h2>Add Your Dog♡🐾</h2><br><br><br>
+    <h2 class="yourDogName">Add Your Dog♡🐾</h2><br><br><br>
     <label class="chooseFileButton" for="pictures">Add picture:
         <input type="file" name="pictures" id="pictures">
     </label><br>
@@ -27,10 +27,8 @@
     <label class="akcVerificationButton" for="hasAkcCertification">AKC Certification:
         <input type="checkbox" name="hasAkcCertification" id="hasAkcCertification">
     </label><br><br>
-    <div class="rowButtons">
     <a href="/owners/<%= owner._id %>">⇤Go back↩</a>
-    <button type="submit">Add Dog ฅ՞•ﻌ•՞ฅ</button>
-</div>
+    <button type="submit" class="buttonAddDogs">Add Dog ฅ՞•ﻌ•՞ฅ</button>
     <section class="haveAccText"><br><br>
         <a href="/">Sign up with different account?</a>
         <a href="/login">Log out</a>
