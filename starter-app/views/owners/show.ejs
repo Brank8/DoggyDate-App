@@ -19,16 +19,7 @@
               <img src="<%= dog.pictures %>" alt="<%= dog.name %>" class="imgClass">
             </a>
           </div>
-    
-        <% if (dog.age <= 3) { %>
-          Woof! I'm <%= dog.name %>, <%= dog.age %> years old dog<br>living in <%=dog.city %>.<br>
-        
-          <% } else if (dog.age <= 6) { %>
-          <%= dog.name %> here—a playful, <%= dog.age %>-year-old dog<br>living in <%=dog.city %>.<br>
-        
-          <% } else { %>
-          It's me, <%= dog.name %>—a wise, <%= dog.age %>-year-old dog<br>living in <%=dog.city %>.<br>
-        <% } %>
+          <p><%= dog.name %></p>
   
         <div class="buttonsWrapper">
         <button class="buttonUpdate"><a href="<%= owner._id %>/dogs/<%= dog._id %>/edit" class="no-underline">Update</a></button>

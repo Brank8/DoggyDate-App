@@ -63,13 +63,7 @@ exports.postSignup = async (req, res) => {
 };
 
 exports.logout = (req, res) => {
-  // Destroy the session
-  req.session.destroy((error) => {
-    if (error) {
-      console.error('Error destroying session:', error);
-      return res.render('error', { title: 'Error', error: 'An error occurred during logout' });
-    }
-    res.redirect('/login');
-  });
+  req.logout(); // This function removes the user from the session
+  res.redirect('/');
 };
 

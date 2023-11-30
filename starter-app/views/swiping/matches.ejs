@@ -1,13 +1,13 @@
 <%- include('../partials/header') %>
     <% if (userDog.matchedWith.length > 0) { %>
        <% userDog.matchedWith.forEach(function(m) { %>
-        <img src="/<%= m.pictures %>" alt="<%= m.name %>" class="imgClass">
+        <img src="<%= m.pictures %>" alt="<%= m.name %>" class="imgClass">
             <%= m.name %> <br>
             Age: <%= m.age %> <br>
            Location: <%= m.city %> <br>
            <button><a href="mailto:<%= m.owner.email %>" class="email-owner-button">Message Owner</a></button>
             <% })%>
     <%} else { %>
-       <h3>you dont have any matches </h3> 
+       <h3>You don't have any matches at the moment.</h3> 
        <% } %>
 <%- include('../partials/footer') %>
