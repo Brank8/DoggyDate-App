@@ -25,7 +25,7 @@
       <p>No more dogs to swipe on!</p><br><br>
     </div>
     <% } %>
-    <button><a href="/owners/<%= owner._id %>/dogs/<%= userDog._id%>/matches">View <%= userDog.name%>'s Matches</button>
+    <button><a href="/owners/<%= owner._id %>/dogs/<%= userDog._id%>/matches">View <%= userDog.name%>'s Matches</a></button>
       <div class="refreshButton">
       <a href="/owners/<%= owner._id %>">⇤Go back↩</a>
       <form onsubmit="window.location.reload();" method="get">

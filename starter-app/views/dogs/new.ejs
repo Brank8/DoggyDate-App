@@ -3,7 +3,7 @@
 <form action="/owners/<%= owner._id %>/dogs" method="POST" enctype="multipart/form-data" class="addAndUpdateContainers">
     <h2 class="yourDogName">Add Your Dog♡🐾</h2><br><br><br>
     <label class="chooseFileButton" for="pictures">Add picture:
-        <input type="file" name="pictures" id="pictures">
+        <input type="file" name="pictures" id="pictures" required>
     </label><br>
     <div class="addDogs">
     <label for="name">Name:

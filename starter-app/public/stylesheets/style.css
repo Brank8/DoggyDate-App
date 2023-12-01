@@ -14,7 +14,7 @@ body {
   align-items: center;
   justify-content: center;
   /* padding: 0; */
-  /* overflow: hidden; */
+  overflow: hidden;
   /* border: 5px double rgb(214, 123, 201); */
   /* display: grid;
   align-items: center; */
@@ -198,6 +198,7 @@ main {
 .yourDogName {
   font-family: 'Courier New', Courier;
   margin-bottom: 5px;
+  font-weight: bolder;
 }
 
 .aboutDogClass {
@@ -217,6 +218,26 @@ main {
 
 }
 
+.startSwipping {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  margin-top: 15px;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 198, 201);
+  /* padding: 10px; */
+  font-size: 18px;
+  border-radius: 25px;
+  text-decoration: none;
+  /* border-bottom-right-radius: 10px; */
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.startSwipping:hover {
+  background-color: rgb(0, 255, 0);
+}
 /* .imgContainer {
   display: flex;
   justify-content: center;
