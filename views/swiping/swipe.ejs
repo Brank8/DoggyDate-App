@@ -1,0 +1,35 @@
+<%- include('../partials/header') %>
+<section id="swipe-page">
+    <% if (dog) { %>
+      
+        
+        <img src="<%= dog.pictures %>" alt="<%= dog.name %>" class="imgClass">
+        <div class="aboutDogClass">
+
+          <h3><%= dog.name %></h3>
+          <p>Age: <%= dog.age %></p>
+          <p>Breed: <%= dog.breed %></p>
+          <p>Bio: <%= dog.bio %></p>
+          
+          
+          <form action="/owners/<%= owner._id %>/dogs/<%= userDog._id %>/like/<%= dog._id %>" method="POST">
+            <button type="submit">Like ❤️</button>
+          </form>
+          
+          
+          <form action="/owners/<%= owner._id %>/dogs/<%= userDog._id %>/dislike/<%= dog._id %>" method="POST">
+            <button type="submit">Dislike 💔</button>
+          </form>
+        </div>
+        <% } else { %>
+          <div class="noMoreDogs">
+            <p>No more dogs to swipe on!</p><br><br>
+          </div>
+          <% } %>
+          <button><a href="/owners/<%= owner._id %>/dogs/<%= userDog._id%>/matches">View <%= userDog.name%>'s Matches</button>
+            <div class="refreshButton">
+              <a href="/owners/<%= owner._id %>">⇤Go back↩</a>
+            </div>
+              
+              
+              <%- include('../partials/footer') %>

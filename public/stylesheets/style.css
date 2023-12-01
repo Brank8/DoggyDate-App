@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right top, #FF5200, #FF153F, #FF006B, #F40096, #CE00BF, #B400D3, #8C0BE9, #3927FF, #4C37FE, #5B46FE
+  , #6853FC, #745FFB);
+  margin: 0;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Glory&display=swap");
+svg {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 10s infinite alternate;
+	stroke-width: 2;
+	stroke: #ffffff;
+	font-size: 55px;
+  letter-spacing: 1px;
+  text-anchor: middle;
+}
+@keyframes stroke {
+	0%   {
+		fill: rgba(204,171,76,0); stroke: rgb(133, 0, 0);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(204,171,76,0); stroke: #800000 }
+	80%  {fill: rgba(204,171,76,0); stroke: #770000; stroke-width: 3; }
+	100% {
+		fill: #7d0000; stroke: rgba(211,210,89,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+.wrapper {
+  width: 360px;
+  background-color: yellow;
+  border: 10px double rgb(112, 0, 0); 
+  border-radius: 100px;
+  text-align: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.formClass {
+  
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.signUpClass { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  margin: 0;
+  /* border: 5px double rgb(214, 123, 201);  check what is this for!!!*/
+}
+
+.signupWordClass {
+  text-align: center;
+  color: rgb(118, 0, 0);
+  padding: 7px;
+  border: 5px solid yellow;
+  border-style: dashed dotted double none;
+  border-radius: 25px;
+  font-size: 25px;
+}
+
+nav a {
+  color: #000000;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-weight: normal;
+  text-decoration: none;
+  font-style: normal;
+  text-transform: none;
+  padding: 15px;
+  text-decoration: none;
+  margin: 5px;
+}
+
+nav a:hover {
+  border-radius: 15px;
+  color: white;
+  background: #d82584;
+  transition: background-color 5s ease-out 100ms;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+}
+nav a:hover,nav a:focus, nav a:active {
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
+
+.topButtonsClass {
+  /* grid-area: nav; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px 0 30px;
+  border-bottom: 7px double rgb(118, 0, 0);
+  font-size: 30px;
+  margin: 0;
+}
+
+.haveAccText {
+  color: rgb(0, 0, 0);
+  padding-top: 7px;
+  font-family: 'Courier New', Courier;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.showPage {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  color: purple;
+}
+
+#nameID {
+  margin-top: 5px;
+  width: 360px;
+  text-align: center;
+  max-width: 100%;
+  margin: auto;
+}
+
+.ownerName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: black;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.yourDogName {
+  font-family: 'Courier New', Courier;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.petname {
+  background-color: solid red;
+padding: 5px;
+
+}
+
+.mainWrapper {
+  background-color: #3927FF;
+}
+
+.petnamediv{
+  background-color: rgb(94, 148, 175);
+  border-radius: 30%;
+}
+
+.aboutDogClass {
+  text-align: center;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dogContainerRow {
+  flex-direction: row;
+  display: flex;
+  gap: 10px;
+
+}
+
+
+.imgClass {
+  width: 170px;
+  height: 170px;
+  padding-bottom: 3px;
+  border-radius: 20px;
+}
+
+.buttonsWrapper {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.buttonUpdate {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 201, 91);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  border-top-left-radius: 10px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
+}
+
+.buttonUpdate:hover {
+  background-color: rgb(0, 255, 0);
+}
+
+.buttonDelete {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgb(217, 85, 85);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 25px;
+  border-top-left-radius: 10px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.buttonDelete:hover {
+  background-color: red;
+}
+
+.buttonAddDogs {
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(91, 190, 167);
+  padding: 15px;
+  font-size: 17px;
+  border-radius: 45px;
+  font-family: 'Courier New', Courier;
+  font-weight: bold;
+  
+}
+
+.buttonAddDogs:hover {
+  background-color: rgb(0, 255, 0);
+}
+
+.button-gap {
+  margin: 0 20px;
+}
+
+a.no-underline {
+  text-decoration: none;
+  color: white;
+}
+
+.noDogsPadding {
+  padding-top: 50px;
+  padding-bottom: 20px;
+ 
+  font-family: 'Courier New', Courier;
+  font-weight: bold;
+}
+
+.updatePage {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  
+  height: 100vh;
+  margin: 0;
+  color: purple;
+}
+
+.updateDogs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: medium;
+}
+
+.addDogs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 10px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: medium;
+  color: white;
+}
+.addAndUpdateContainers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 140px;
+}
+
+.akcVerificationButton {
+  font-size: medium;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
+}
+
+.chooseFileButton {
+  padding-left: 62px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: medium;
+  color: white;
+}
+
+
+
+.rowButtons {
+  display: flex;
+  gap: 30px;
+}
+.addPage {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  color: purple;
+}
+
+.refreshButton {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.goBack{
+  display: grid;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(225, 152, 164);
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  border-top-left-radius: 10px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
+}
+
+.noMoreDogs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.black_overlay {
+  display: none;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+.white_content {
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  padding: 16px;
+  border: 16px solid orange;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
+
+
+
+
+@media only screen and (max-width: 300px) {
+  body {
+    width: 100%;
+    font-size: 8px;
+  }
+};
+
+@media only screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    height: 180vh;
+  }
+};
+
+@media only screen and (max-width: 600px) and (min-width: 376px) {
+  body {
+    width: 100%;
+    font-size: 20px;
+    height: 100vh;
+}
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (max-width: 1500px) and (min-width: 1001px) {
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  body {
+    width: 100%;
+    height: 100vh;
+}
+}
