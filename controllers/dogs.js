@@ -20,6 +20,7 @@ async function newDog (req, res) {
 }
 
 async function create(req, res) {
+    // const picPath = req.file.path;
     const dogData = {...req.body}
     const owner = await Owner.findById(req.params.id)
     dogData.owner = owner._id
