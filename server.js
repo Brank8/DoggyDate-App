@@ -65,6 +65,17 @@ app.use('/owners', ownersRouter);
 app.use('/', dogsRouter)
 
 
+
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
+
+
+// catch 404 and forward to error handler
+// app.use(function(req, res, next) {
+//   next(createError(404));
+// });
+
 app.use(function(err, req, res, next) {
   if (req.app.get('env') === 'development') {
     console.error(err.stack);
@@ -92,8 +103,3 @@ db.once('open', function () {
 });
 
 module.exports = app;
-
-
-
-
-
