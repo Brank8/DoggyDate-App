@@ -91,7 +91,33 @@ nav a {
   margin: 5px;
 }
 
-nav a:hover {
+.login {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.login:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.login svg {
+  height: 48px;
+  width: 48px;
+  margin-right: 5px;
+}
+
+/* nav a:hover {
   border-radius: 15px;
   color: white;
   background: #d82584;
@@ -111,7 +137,7 @@ nav a:hover {
 nav a:hover,nav a:focus, nav a:active {
   -webkit-transform: skew(-10deg);
   transform: skew(-10deg);
-}
+} */
 
 .topButtonsClass {
   /* grid-area: nav; */
