@@ -102,4 +102,8 @@ db.once('open', function () {
   console.log(`Connected to MongoDB ${db.name} at ${db.host}:${db.port}`);
 });
 
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
 module.exports = app;

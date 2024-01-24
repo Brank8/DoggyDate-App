@@ -238,6 +238,12 @@ padding: 5px;
   padding-bottom: 3px;
   border-radius: 20px;
 }
+#dogName{
+  color: darkgrey;
+  font-family: 'Courier New', Courier;
+  font-weight: bolder;
+  font-size: x-large;
+}
 
 .buttonsWrapper {
   display: flex;

@@ -26,7 +26,6 @@ async function create(req, res) {
     dogData.hasAkcCertification = !!dogData.hasAkcCertification
     const result = await streamUpload(req)
     dogData.pictures = result.url
-    const createdDog = await Dog.create(dogData)
     try {
     
         res.redirect("/owners/" + dogData.owner)
