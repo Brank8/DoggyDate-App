@@ -1,8 +1,8 @@
 # DoggyDate
-Introducing "DoggyDate," an app for dog owners to create profiles for their pets, find suitable breeding matches, or arrange playdates.
+Introducing "DoggyDate", an app for dog owners to create profiles for their pets, find suitable breeding matches, or arrange playdates.
 
 ## Walkthrough
-1. Log or Sign up with google account
+1. Log in or Sign up with Google account
 2. Click on a dog to start matching, or create a new dog
 3. Like / Dislike, or view your matches
 4. In the view matches page, you can contact your dog's matches owner
